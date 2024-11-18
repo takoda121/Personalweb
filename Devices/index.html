@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Šonka</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loading">
+        <div class="spinner"></div>
+      </div>
+      <script>
+        //Yes im using a fake loading animation deal with it.
+        window.addEventListener("load", () => {
+          setTimeout(() => {
+            const loadingScreen = document.getElementById("loading");
+            loadingScreen.classList.add("hidden");
+            
+            setTimeout(() => {
+              document.getElementById("content").style.display = "block";
+            }, 500); 
+          }, 1000);
+        });
+      </script>
+      <div class="alert">
+        <center><b>Planned maintance of ALL services on: 19th of November</b></center>
+      </div> 
+  <a href="index.html" class="button">Back</a>
+  <section class="home" id="home">
+    <div class="intro">
+      <h1>My Devices 💻</h1>
+
+      <a href="#daily" class="button">Daily carry 📱</a> 
+      <a href="#computer" class="button">My computer 🖥️</a>
+      <a href="#server" class="button">My servers 🌍</a>
+      <a href="#printer" class="button">My 3D Printers 🖨️</a>
+
+    </div>
+  </section>
+
+  <section class="projects" id="daily">
+    <div class="container">
+      <h2>Things that I carry daily 📱</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>iPhone 13 128gb Green 📱</h3>
+          <p>This is my first iPhone and I very like it. I think the expirience is much better than on Android (my opinion).</p>
+          <center><a href="https://support.apple.com/en-us/111872" target="_blank" class="button">View on Apple</a></center>
+        </div>
+        <div class="project-card">
+          <h3>Airpods Gen 4 ANC 🎧</h3>
+          <p>I bought these when I was in the Dubai Apple Store only because they had ANC. Very good audio.</p>
+          <center><a href="https://www.apple.com/airpods-4/" target="_blank" class="button">View on Apple</a></center>
+        </div>
+        <div class="project-card">
+          <h3>Apple Watch Series 3 ⌚</h3>
+          <p>Even tho they are super old they still function very good. I got them from my friend for 20€.</p>
+          <center><a href="https://support.apple.com/en-us/111891" target="_blank" class="button">View on Apple</a></center>
+        </div>
+        <div class="alert">
+          <center>⚠️ <strong>Warning:</strong> <b>This website does not encourage the use of nicotine, especially for underage individuals.</b></center>
+        </div> 
+        <div class="project-card">
+          <h3>ELFBAR Elfa V2 🚬</h3>
+          <p>I use the fillable pod with this device. Was cheap and Im addicted.</p>
+          <center><a href="https://www.elfbar.com/product/elfa-pro.html" target="_blank" class="button">View on Elfbar</a></center>
+        </div>
+        <div class="project-card">
+          <h3>Velo 4 Strawberry ICE 🇸🇪</h3>
+          <p>Basically nicotine pouches. The best flavour in my opnion and also strongest that I can get in my country because of white pouch regulations. And Im also addicted to them.</p>
+          <center><a href="https://www.velo.com/cz/cs/velo-original-strawberry-ice" target="_blank" class="button">View on Velo CZ</a></center>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Why am I fucking using the same class omfg-->
+  <section class="projects" id="computer">
+    <div class="container">
+      <h2>My computer 🖥️</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Sapphire RX 6600 XT (GPU)</h3>
+          <p>Was a cheap gpu that I could afford at the time. Used the ray tracing feature like 3 times. The performance is good enough for me.</p>
+          <center><a href="https://www.sapphiretech.com/en/consumer/pulse-radeon-rx-6600-xt-8g-gddr6" target="_blank" class="button">View on Sapphire</a></center>
+        </div>
+        <div class="project-card">
+          <h3>AMD Ryzen 3600 (CPU)</h3>
+          <p>A decent cpu that was cheap (if you couldnt notice yet I was poor at the time). The performance is also good enough for me but I thought on upgrading.</p>
+          <center><a href="https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-3000-series/amd-ryzen-5-3600.html#amd_support_product_spec" target="_blank" class="button">View on AMD</a></center>
+        </div>
+        <div class="project-card">
+          <h3>Arch Linux (OS)</h3>
+          <p>I use Arch BTW. I actually love this distro because everything works.</p>
+          <center><a href="https://archlinux.org/" target="_blank" class="button">View on ArchLinux</a></center>
+        </div>
+        <div class="project-card">
+          <h3>48GB DDR4 (RAM)</h3>
+        </div>
+        <div class="project-card">
+          <h3>4TB storage (HDD & SSD)</h3>
+          <p>2x 512gb M.2 ssd and 1x 1tb HDD and also a 1x 2tb HDD</p>
+        </div>
+
+    </div>
+  </section>
+  <section class="projects" id="server">
+    <div class="container">
+      <h2>Servers 🌍</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Raspberry Pi 4b 8GB ram</h3>
+          <p>I use this one to host basic stuff like this website. It works well and actually I daily drived it for a week once.</p>
+          <center><a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/" target="_blank" class="button">View on Raspberry Pi</a></center>
+        </div>
+        <div class="project-card">
+          <h3>Raspberry Pi 5 8GB ram</h3>
+          <p>This one hosts more complex stuff like Minecraft. I really love it.</p>
+          <center><a href="https://www.raspberrypi.com/products/raspberry-pi-5/" target="_blank" class="button">View on Raspberry Pi</a></center>
+        </div>
+    </div>
+  </section>
+  <section class="projects" id="printer">
+    <div class="container">
+      <h2>3D Printers 🖨️</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Prusa MK3.5s</h3>
+          <p>I upgraded my old MK3 to this beast. I still love this printer and give it the most love</p>
+          <center><a href="https://www.prusa3d.com/product/original-prusa-i3-mk3s-to-mk3-5s-upgrade-kit-5/" target="_blank" class="button">View on Prusa3D</a></center>
+        </div>
+        <div class="project-card">
+          <h3>Prusa MK4s</h3>
+          <p>This is my dads printer that I and my mom bought for his birthday. He also likes and I use it when I need something done quickly</p>
+          <center><a href="https://www.prusa3d.com/product/original-prusa-mk4s-3d-printer-kit/" target="_blank" class="button">View on Prusa3D</a></center>
+        </div>
+        <h2>MK3.5s upgrades</h2>
+        <div class="project-card">
+          <h3>Raspberry Pi Zero 2 W</h3>
+          <p>I use this for octoprint because Prusa Link would be too basic for the power of the Raspberry</p>
+          <center><a href="https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/" target="_blank" class="button">View on Raspberry Pi</a></center>
+        </div>
+        <div class="project-card">
+          <h3>Basic Web Camera</h3>
+          <p>Just for monitoring my print with octoprint.</p>
+        </div>
+        <div class="project-card">
+          <h3>Enclosure</h3>
+          <p>I built a enclouse for the MK4s and this printer so I could print ABS. Made from 2 IKEA Lack tables</p>
+        </div>
+        <div class="project-card">
+          <h3>Hardened nozzle</h3>
+          <p>Its a basic 0.4mm hardened nozzle because of me wanting to print Polycarbonate Carbon-Fibre</p>
+        </div>
+    </div>
+  </section>
+
+
+</body>
+</html>
