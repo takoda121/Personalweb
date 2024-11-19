@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="title" content="My Devices">
+  <meta name="description" content="Devices that I use on a daily basis.">
+  <meta name="keywords" content="developer, c++, python">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="author" content="David Šonka">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Šonka</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loading">
+        <div class="spinner"></div>
+      </div>
+      <script>
+        //Yes im using a fake loading animation deal with it.
+        window.addEventListener("load", () => {
+          setTimeout(() => {
+            const loadingScreen = document.getElementById("loading");
+            loadingScreen.classList.add("hidden");
+            
+            setTimeout(() => {
+              document.getElementById("content").style.display = "block";
+            }, 500); 
+          }, 1000);
+        });
+      </script>
+
+  <a href="../index.html" class="button">Back</a>
+  <section class="home" id="home">
+    <div class="intro">
+      <h1>Blog 💭</h1>
+
+      <a href="#tech" class="button">Tech 🖥️</a>
+
+
+    </div>
+  </section>
+
+  <section class="projects" id="tech">
+    <div class="container">
+      <h2>Tech 🖥️</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Opinion on Android vs iOS 📱</h3>
+          <p>This is my opinion on Android vs iOS. I do not see that much of a difference.</p>
+          <center><a href="androidvsios/" target="_blank" class="button">Read</a></center>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+</body>
+</html>

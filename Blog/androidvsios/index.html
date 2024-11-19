@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="title" content="My Devices">
+  <meta name="description" content="Devices that I use on a daily basis.">
+  <meta name="keywords" content="developer, c++, python">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="author" content="David Šonka">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Šonka</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loading">
+        <div class="spinner"></div>
+      </div>
+      <script>
+        //Yes im using a fake loading animation deal with it.
+        window.addEventListener("load", () => {
+          setTimeout(() => {
+            const loadingScreen = document.getElementById("loading");
+            loadingScreen.classList.add("hidden");
+            
+            setTimeout(() => {
+              document.getElementById("content").style.display = "block";
+            }, 500); 
+          }, 1000);
+        });
+      </script>
+
+  <a href="../index.html" class="button">Back</a>
+  <section class="home" id="home">
+    <div class="intro">
+      <h1>Opinion on Android vs iPhone 📱</h1>
+
+      <section class="projects" id="tech">
+        <div class="container">
+          <div class="project-grid">
+            <div class="project-card">
+                <h2>Part One</h2>
+                <p>I have been a lifelong Android-user and was making fun of iPhones. But that ended when my lifelong Android-user brother got an iPhone and I tried using it. And I liked it so I was like I'm going to save up for an iPhone 13.</p>
+                <h2>1st of May 2024</h2>
+                <p>That day I got my first iPhone. I really liked it and I'm still using it to this day.</p>
+                <h2>View on iOS now</h2>
+                <p>I think the experience is very much the same just very limited sideloading.  I do not see the argument of people saying "It only has 4 GB RAM so it will be buggy" I don't think it is, I think it's much smoother and faster than my 8 GB RAM Android and that is because of them developing their OS directly for their phones so it can run much better. </p>
+                <h2>Summary</h2>
+                <p>I am enjoying my iPhone and will probably be an iPhone user forever. It was very dumb of me to say something about the other when I hadn't tried it.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+
+</body>
+</html>
